@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;    
+}
+
+html{
+     /* me permite deslizar cuando hago click en los links del menu*/
+     scroll-behavior: smooth;
+
+     html {
+        height: 100%;
+    }
+    body {
+        min-height: 100%;
+    }
+}
+
+head{
+    display: flex;
+   width: 1,440px;
+   height: 96px;
+   padding:20px,0px,20px,0px;
+   background-color: #5300c8;
+}
+
+.logo{
+    width: 374px;
+    height: 56px;
+    position: relative;
+    right: -550px;
+    top: -70px;
+}
+
+.productos-container{
+    width: 678px;
+    height: 971px;
+    padding: 15px;
+    gap: 115px;
+}
+
+.productos h1{
+    width: 578px;
+    height: 24px;
+    font-family:'Press Start 2P',sans-serif;
+    font-weight: 400;
+    size: 24px;
+    line-height: 24px;
+    align-self: center;
+    position: relative;
+    left: 250px;
+    top: 75px;
+}
+
+.productos img{
+    width: 190px;
+    height: 250px;
+    border: 3px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+    position: relative;
+    top: 150px;
+    left: 100px; 
+}
+
+
+.forma h1{
+    width: 392px;
+    height: 48px;
+    font-family:'Press Start 2P',sans-serif;
+    font-weight: 400;
+    size: 24px;
+    line-height: 24px;
+    align-self: center;
+    position: relative;
+    left: 1050px;
+    top: -700px;
+}
+
+.input-container{
+width: 392px;
+height: 58px;
+}
+
+.formcontato__input{
+    width: 392px;
+    height: 52px;
+    top: 10px;
+    left: 14.15px;
+    font-family: 'IBM Plex Mono';
+    font-weight: 600;
+    size: 16px;
+    line-height: 28.8px;
+    border: 3px;
+    border-radius: 200px;
+    background-color: lightsteelblue;
+    position: relative;
+    left: 950px;
+    top: -650px;
+}
+
+.input-label{
+    display: none;
+}
+
+.input-message-error {
+    display: none;
+  }
+
+.formcontato__botao{
+    width: 188px;
+    height: 55px;
+    border-radius: 15px;
+    font-family: 'IBM Plex Mono';
+    background-color: #03318c;
+    color: #fff;
+    position: relative;
+    left: 950px;
+    top: -600px;
+}
+
+.footer{
+    width: 100%;
+   height: 232px;
+   padding: 64px;
+ margin-bottom: 30px;
+    display: flex;
+    background-color: #5300c8
+}
+
+.logo-2{
+    width: 374px;
+    height: 56px;
+    position: relative;
+    left: 500px;
+}
+
+.footer p{
+    font-family: 'IBM Plex Mono';
+    font-weight: 400;
+    size: 16px;
+    line-height: 16px;
+    align-content: center;
+    position: relative;
+    left: 30px;
+}
+
+/*Responsive*/
+@media screen and (max-width: 400px) {
+    .logo{
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .productos h1{
+        width: 578px;
+    height: 20px;
+    font-family:'Press Start 2P',sans-serif;
+    font-weight: 400;
+    size: 24px;
+    line-height: 24px;
+    align-self: center;
+    position: relative;
+    left: 8px;
+    top: 75px;
+    }
+}
+    
+@media screen and (max-width: 480px) {
+    .productos img{
+        width: 500px;
+    height: 200px; 
+    position: relative;
+    left: -100px;
+    size-adjust: 25px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+.forma h1{
+    width: 392px;
+    height: 48px;
+    position: relative;
+    align-self: center;
+    left: 100px;
+    top: 250px;
+}
+
+}
+
+@media screen and (max-width:400px) {
+    .input-container{
+        width: 500px;
+        height: 70px;
+        position: relative;
+        align-self: center;
+        left: -960px;
+        top: 950px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+.formcontato__botao{
+    width: 180px;
+    height: 50px;
+    position: relative;
+ align-self: center;
+ left: -10px;
+ top: 350px;
+}
+}
+
+@media screen and (max-width: 400px) {
+    .footer{
+        position: relative;
+        align-self: center;
+        left: -10px;
+        top: 400px;
+    }
+}
+    
+@media screen and (max-width:400px) {
+    .logo-2 {
+        width: 300px;
+        height: 40px;
+        position: relative;
+        align-self: center;
+        left: -65px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .logo {
+        right: -180px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .productos h1 {
+        position: relative;
+        align-self: center;
+        left: 200px 
+    }
+    .productos img {
+
+        position: relative;
+        align-self: center;
+        left: 60px;
+    }
+
+    .forma h1 {
+        position: relative;
+        align-self: center;
+        left: 300px;
+        top: 200px;
+    }
+
+    .input-container {
+        width: 390px;
+        height: 60px;
+        position: relative;
+        align-self: center;
+        right: 780px;
+        top: 900px;
+    }
+
+    .formcontato__botao {
+        position: relative;
+        align-self: center;
+        left: 160px;
+        top: 300px;
+    }
+
+    .footer{
+        position: relative;
+        align-self: center;
+        left: -10px;
+        top: 400px;
+    }
+
+    .logo-2 {
+        width: 300px;
+        height: 40px;
+        position: relative;
+        align-self: center;
+        left: 160px;
+    }
+}
+
+
